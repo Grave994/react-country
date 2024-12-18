@@ -1,9 +1,213 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+    "countries": [
+        {
+            "id": 1,
+            "name": "Azərbaycan",
+            "population": 10139177,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Flag_of_Azerbaijan.svg/320px-Flag_of_Azerbaijan.svg.png",
+            "capital": "Bakı",
+            "description": "Azərbaycan, Cənubi Qafqazda yerləşən bir dövlətdir.",
+            "religion": "İslam"
+        },
+        {
+            "id": 2,
+            "name": "Türkiyə",
+            "population": 84493300,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/320px-Flag_of_Turkey.svg.png",
+            "capital": "Ankara",
+            "description": "Türkiyə, həm Asiya, həm də Avropa qitələrində yerləşən bir dövlətdir.",
+            "religion": "İslam"
+        },
+        {
+            "id": 3,
+            "name": "Gürcüstan",
+            "population": 3989167,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_Georgia.svg/320px-Flag_of_Georgia.svg.png",
+            "capital": "Tbilisi",
+            "description": "Gürcüstan, Şərqi Avropada yerləşən bir dövlətdir.",
+            "religion": "Xristianlıq"
+        },
+        {
+            "id": 4,
+            "name": "Rusiya",
+            "population": 145912025,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/320px-Flag_of_Russia.svg.png",
+            "capital": "Moskva",
+            "description": "Rusiya, dünyanın ən böyük dövləti olan bir ölkədir.",
+            "religion": "Xristianlıq"
+        },
+        {
+            "id": 5,
+            "name": "Böyük Britaniya",
+            "population": 67886011,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_Kingdom.svg/320px-Flag_of_the_United_Kingdom.svg.png",
+            "capital": "London",
+            "description": "Böyük Britaniya, qərbi Avropada yerləşən bir dövlətdir.",
+            "religion": "Xristianlıq"
+        },
+        {
+            "id": 6,
+            "name": "Fransa",
+            "population": 67391582,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/320px-Flag_of_France.svg.png",
+            "capital": "Paris",
+            "description": "Fransa, Avropanın qərb hissəsində yerləşən bir dövlətdir.",
+            "religion": "Xristianlıq"
+        },
+        {
+            "id": 7,
+            "name": "Almaniya",
+            "population": 83783942,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/320px-Flag_of_Germany.svg.png",
+            "capital": "Berlin",
+            "description": "Almaniya, Avropanın mərkəzində yerləşən bir dövlətdir.",
+            "religion": "Xristianlıq"
+        },
+        {
+            "id": 8,
+            "name": "Amerika Birləşmiş Ştatları",
+            "population": 331002651,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png",
+            "capital": "Vaşinqton",
+            "description": "Amerika Birləşmiş Ştatları, Şimali Amerikanın ən güclü ölkəsidir.",
+            "religion": "Xristianlıq"
+        },
+        {
+            "id": 9,
+            "name": "Kanada",
+            "population": 37742154,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Canada.svg/320px-Flag_of_Canada.svg.png",
+            "capital": "Ottava",
+            "description": "Kanada, Şimali Amerikanın böyük bir dövləti və ikinci ən böyük ölkəsidir.",
+            "religion": "Xristianlıq"
+        },
+        {
+            "id": 10,
+            "name": "İtaliya",
+            "population": 60264656,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/320px-Flag_of_Italy.svg.png",
+            "capital": "Roma",
+            "description": "İtaliya, Cənubi Avropada yerləşən və qədim tarixə sahib bir ölkədir.",
+            "religion": "Xristianlıq"
+        },
+        {
+            "id": 11,
+            "name": "İspaniya",
+            "population": 46719142,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/320px-Flag_of_Spain.svg.png",
+            "capital": "Madrid",
+            "description": "İspaniya, Cənubi Avropanın qərb hissəsində yerləşən bir dövlətdir.",
+            "religion": "Xristianlıq"
+        },
+        {
+            "id": 12,
+            "name": "Yaponiya",
+            "population": 126858000,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/320px-Flag_of_Japan.svg.png",
+            "capital": "Tokio",
+            "description": "Yaponiya, Şərqi Asiyada yerləşən bir ada dövlətidir.",
+            "religion": "Şintoizm"
+        },
+        {
+            "id": 13,
+            "name": "Çin",
+            "population": 1393780000,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_China.svg/320px-Flag_of_China.svg.png",
+            "capital": "Pekin",
+            "description": "Çin, dünyanın ən çox əhalisi olan ölkəsidir.",
+            "religion": "Buddizm"
+        },
+        {
+            "id": 14,
+            "name": "Hindistan",
+            "population": 1380004385,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png",
+            "capital": "Nyu Dehli",
+            "description": "Hindistan, Cənubi Asiyada yerləşən bir ölkədir.",
+            "religion": "Hinduizm"
+        },
+        {
+            "id": 15,
+            "name": "Braziliya",
+            "population": 211049527,
+            "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/320px-Flag_of_Brazil.svg.png",
+            "capital": "Braziliya şəhəri",
+            "description": "Braziliya, Cənubi Amerikanın ən böyük ölkəsidir.",
+            "religion": "Xristianlıq"
+        }
+    ],
+    "messages": [
+        {
+            "id": 1,
+            "fullName": "Ahmad Məmmədov",
+            "email": "ahmad@mail.com",
+            "title": "Xahiş etdim",
+            "message": "Mənimlə əlaqə saxlayın, məsələlər haqqında danışmaq istəyirəm.",
+            "isRead": true
+        },
+        {
+            "id": 2,
+            "fullName": "Leyla Quliyeva",
+            "email": "leyla@mail.com",
+            "title": "Yardım Lazımdır",
+            "message": "Təhsil haqqında suallarım var, kömək edə bilərsiniz?",
+            "isRead": false
+        },
+        {
+            "id": 3,
+            "fullName": "Rəşad Əliyev",
+            "email": "reshad@mail.com",
+            "title": "Problem haqqında",
+            "message": "Saytın bəzi hissələri işləməyir, problemləri aradan qaldırmaq lazımdır.",
+            "isRead": false
+        },
+        {
+            "id": 4,
+            "fullName": "Fərid İsmayılov",
+            "email": "farid@mail.com",
+            "title": "Sual",
+            "message": "Ölkələr üçün yeni məlumat əlavə etməyə imkan varmı?",
+            "isRead": false
+        },
+        {
+            "id": 5,
+            "fullName": "Səid Cəfərov",
+            "email": "said@mail.com",
+            "title": "Yeniliklər haqqında",
+            "message": "Yeni xüsusiyyətlər əlavə etmək istəyirəm.",
+            "isRead": true
+        },
+        {
+            "id": 6,
+            "fullName": "Samir Rüstəmov",
+            "email": "samir@mail.com",
+            "title": "Bug raportu",
+            "message": "Əlavə edilən ölkələr səhv göstərilir, düzəliş edilməlidir.",
+            "isRead": true
+        },
+        {
+            "id": 7,
+            "fullName": "Nigar Məhərrəmova",
+            "email": "nigar@mail.com",
+            "title": "Rəy",
+            "message": "Təklif edirəm ki, ölkə detalları səhifəsinə əlavə məlumatlar əlavə edilsin.",
+            "isRead": true
+        },
+        {
+            "id": 8,
+            "fullName": "Mahir Hüseynov",
+            "email": "mahir@mail.com",
+            "title": "İş",
+            "message": "İşə qəbul barədə maraqlıyam, məlumat verə bilərsinizmi?",
+            "isRead": false
+        },
+        {
+            "id": 9,
+            "fullName": "Sema Nəcəfova",
+            "email": "sema@mail.com",
+            "title": "Dəstək",
+            "message": "Veb saytında bəzi texniki problemlər var, dəstək göstərilməlidir.",
+            "isRead": false
+        }
+    ]
 }
